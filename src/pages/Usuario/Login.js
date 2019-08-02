@@ -53,14 +53,19 @@ export default class Login extends Component {
     render() {
         return (
             <Row className="login-wrapper">
-                <Col xs="12" className="text-center mb-5">
-                    <span className="logo">
-                        Efetuar Login
-                    </span>
-                </Col>
+                
                 <Col xs="12" sm={{ size: 6, offset: 3 }}>
                     <Card>
                         <CardBody>
+                        <Col xs="12" className="text-center mb-5">
+                            <img src="react.png"  className="brand"/>
+                            <br />
+                            <span className="logo">
+                                Efetuar Login
+                            </span>
+                   
+                    
+                </Col>
                             <Form className="text-center" onSubmit={this.handleLogin}>
                                 <FormGroup >
                                     <Label>E-mail</Label>
